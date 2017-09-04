@@ -10,10 +10,14 @@ const Video = React.createClass({
         return(
             <figure className="grid-figure">
                 <div className="grid-photo-wrap">
-                    <Link to={`/video/${fileName}`}>
-                        <ReactPlayer width="100%" height="100%" url={url} key={i} controls={true} style={{width:'100%', height:'100%'}}/>
-                    </Link>
+                    <ReactPlayer width="100%" height="100%" url={url} key={i} controls={true} style={{width:'100%', height:'100%'}}/>
                 </div>
+
+                <figcaption>
+                    <Link to={`/video/${fileName}`}>
+                        <p>{fileName}</p>
+                    </Link>
+                </figcaption>
 
             </figure>
         )

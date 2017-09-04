@@ -1,5 +1,5 @@
-// a reduces takes two things
-// 1. the action (info about what happened
+// a reducer takes two things
+// 1. the action (info about what happened)
 // 2. copy of the current state
 
 function postComment(state = [], action) {
