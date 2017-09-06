@@ -1,5 +1,6 @@
 import React from 'react';
 import Video from './Video';
+import VideoPlayer from './VideoPlayer';
 
 
 class VideoGrid extends React.Component {
